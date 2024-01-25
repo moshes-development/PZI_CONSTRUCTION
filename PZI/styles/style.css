@@ -1,0 +1,328 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bitter", serif;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px;
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: #4169e1;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgba(65, 105, 225, 0.4784313725);
+  color: black;
+  transition: ease-in-out 0.3s;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons .icon {
+  padding: 20px;
+  font-size: 23px;
+}
+.social-icons .icon a {
+  color: #ffd700;
+}
+.social-icons .icon a:hover {
+  color: #4169e1;
+  transition: ease-in-out 0.2s;
+}
+
+.header {
+  background-color: #36454f;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a {
+  text-decoration: none;
+}
+.header .logo h1 {
+  color: #ffd700;
+  font-size: 32px;
+  letter-spacing: 5px;
+}
+.header .logo p {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.header .menu-icon {
+  color: #ffd700;
+  font-size: 27px;
+}
+.header .menu-icon:hover {
+  color: #4169e1;
+  transition: ease-in-out 0.1s;
+}
+.header .nav {
+  display: none;
+}
+.header .nav ul {
+  display: flex;
+}
+.header .nav ul li {
+  list-style: none;
+}
+.header .nav ul li a {
+  color: #ffd700;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.header .nav ul li a:hover {
+  color: #4169e1;
+  transition: ease-in-out 0.2s;
+}
+.header .nav ul .selected a {
+  color: #4169e1;
+}
+
+.menu-options {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  z-index: 999;
+}
+.menu-options .close-mark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 50px;
+  font-size: 20px;
+}
+.menu-options .close-mark:hover {
+  color: red;
+  transition: ease-in-out 0.2s;
+}
+.menu-options ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu-options ul li {
+  margin: 30px;
+  font-size: 20px;
+  list-style: none;
+}
+.menu-options ul li a {
+  color: black;
+  text-decoration: none;
+}
+.menu-options ul .selected a {
+  color: #4169e1;
+}
+.menu-options .social-icons {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.menu-options .social-icons a {
+  color: #4169e1;
+  font-size: 25px;
+}
+.menu-options .social-icons a:hover {
+  color: #ffd700;
+  transition: ease-in-out 0.2s;
+}
+
+.show-case {
+  background-image: url("/images/show-case.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 83%;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.about-us h2 {
+  height: 50vh;
+  background-color: #36454f;
+  color: #ffd700;
+}
+.about-us .about-content {
+  width: 90%;
+  margin: auto;
+}
+.about-us .about-content p {
+  margin: 30px 0 30px 0;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.services h2 {
+  height: 50vh;
+  background-color: #36454f;
+  color: #ffd700;
+}
+.services .services-content {
+  margin: 50px 0;
+}
+.services .bathroom {
+  background-image: url("/images/bathroom.jpg");
+  background-size: cover;
+  width: 80%;
+  height: 200px;
+  margin: 50px auto 50px auto;
+  position: relative;
+  box-shadow: 0 0 20px -2px #36454f;
+}
+.services .bathroom p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px white;
+}
+.services .kitchen {
+  background-image: url("/images/kitchen.jpg");
+  background-size: cover;
+  width: 80%;
+  height: 200px;
+  margin: 50px auto 50px auto;
+  position: relative;
+  box-shadow: 0 0 20px -2px #36454f;
+}
+.services .kitchen p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px white;
+}
+.services .home-reno {
+  background-image: url("/images/living.jpg");
+  background-size: cover;
+  width: 80%;
+  height: 200px;
+  margin: 50px auto 50px auto;
+  position: relative;
+  box-shadow: 0 0 20px -2px #36454f;
+}
+.services .home-reno p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px white;
+}
+.services .and-more {
+  background-size: cover;
+  background-color: rgba(54, 69, 79, 0.4);
+  width: 80%;
+  height: 200px;
+  margin: 50px auto 50px auto;
+  position: relative;
+  box-shadow: 0 0 20px -2px #36454f;
+}
+.services .and-more p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px white;
+}
+
+.photos h2 {
+  height: 50vh;
+  background-color: #36454f;
+  color: #ffd700;
+}
+.photos .photos-content {
+  text-align: center;
+  padding: 50px;
+}
+.photos .photos-content img {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.contact h2 {
+  height: 50vh;
+  background-color: #36454f;
+  color: #ffd700;
+}
+.contact form {
+  margin: 50px 0;
+}
+.contact form label {
+  width: 80%;
+  display: block;
+  margin: 0 auto 5px auto;
+}
+.contact form input {
+  display: block;
+  width: 80%;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: solid 2px rgba(65, 105, 225, 0.4549019608);
+}
+.contact form textarea {
+  display: block;
+  width: 80%;
+  margin: auto;
+  height: 150px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: solid 2px rgba(65, 105, 225, 0.4549019608);
+}
+.contact form .btn {
+  margin: 20px 0 0 10%;
+}
+
+.footer {
+  padding: 50px;
+  background-color: #4169e1;
+  background-color: #36454f;
+  text-align: center;
+}
+.footer p {
+  margin: 20px 0;
+  color: white;
+  font-size: 16px;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+.footer p a {
+  color: #ffd700;
+}
+.footer p a:hover {
+  color: #4169e1;
+  transition: ease-in-out 0.2s;
+}/*# sourceMappingURL=style.css.map */

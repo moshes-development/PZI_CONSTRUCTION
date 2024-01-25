@@ -1,0 +1,90 @@
+@media screen and (min-width: 766px) {
+  .header {
+    .menu-icon {
+      display: none;
+    }
+    .nav {
+      display: block;
+      ul {
+        display: flex;
+      }
+    }
+  }
+
+  .about-us {
+    .about-content {
+      width: 60%;
+      margin: 50px auto;
+    }
+  }
+
+  .services {
+    .services-content {
+      width: 70%;
+      margin: 75px auto;
+      .card {
+        margin: 50px auto;
+      }
+    }
+  }
+
+  .photos {
+    .photos-content {
+      width: 70%;
+      margin: 75px auto;
+    }
+  }
+
+  .contact {
+    form {
+      width: 70%;
+      margin: 75px auto;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .photos {
+    .photos-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0px;
+      width: 90%;
+      grid-gap: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .about-us {
+    .about-content {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .services {
+    .services-content {
+      .card {
+        width: 60%;
+      }
+    }
+  }
+
+  .photos {
+    .photos-content {
+      width: 75%;
+    }
+  }
+
+  .contact {
+    form {
+      width: 65%;
+    }
+  }
+}
